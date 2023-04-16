@@ -84,13 +84,6 @@ section{
     z-index: 1000;
 }
 
-/*sign in log in */
-
-.header ul{
-    display: flex;
-    
-}
-
 .header .logo img{
     height: 9rem;
 }
@@ -99,9 +92,22 @@ section{
     margin:0 1rem;
     font-size: 1.6rem;
     color:#fff;
+    font-size: 2rem;
 }
 
 .header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .navbar_s a{
+    margin:0 1rem;
+    font-size: 2rem;
+    color:#fff;
+}
+
+.header .navbar_s a:hover{
     color:var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
@@ -563,8 +569,9 @@ section{
 
 }
 
-@media (max-width:768px){
-
+@media (min-width:2008px)
+/* @media (max-width:768px){ */
+{
     #menu-btn{
         display: inline-block;
     }
