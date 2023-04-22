@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Wings</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/lib_logo.png" alt="logo"></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a></nav>
+        <nav class="navbar_s">
+        <ul><li>
+                <a href="signup2.php">Sign Up</a>
+                <a href="login1.php">Login</a>
+            </li></ul>
+        </nav>
+        
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+    
+        <div class="content">
+            <h3>Shine of every word for our future :)</h3>
+            <p> With Library Wings..</p>
+            <a href="https://ndl.iitkgp.ac.in/" class="btn">Know more</a>
+        </div>
+
+    </section>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about_lib.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>our Library Wings</h3>
+                <p>
+                    Our Library Wings is a place where books and sources of information are stored. They make it easier for people to get access to them for various purposes. Libraries are very helpful and economical too. They include books, magazines, newspapers, DVDs, manuscripts and more.</p>
+                <p>"The only thing that you absolutely have to know, is the location of the library."</p>
+                <a href="https://en.wikipedia.org/wiki/Library#:~:text=A%20library%20is%20a%20collection,a%20virtual%20space%2C%20or%20both." class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- review section starts  -->
+ 
+    <section class="review" id="review">
+
+        <h1 class="heading"> Student's <span>review</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>I was very pleased with the environment. Way to go library every evening. It really is extremely essential to my education. Thank you. </p>
+                <img src="images/pic1.jpg" class="user" alt="">
+                <h3>Aditya Rana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Incredible experience every time. I am more than grateful. It's always the first place I go when I need to study. Thank you Library Wings.</p>
+                <img src="images/pic2.jpg" class="user" alt="">
+                <h3>Bharat Pathak</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>The Library has several shining books like stars that's - helpful and knowledgeable, with a love for books and learning. thank you wings.</p>
+                <img src="images/pic3.jpg" class="user" alt="">
+                <h3>Tanu Kumari</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section> 
+
+    <!-- review section ends -->
+
+    <!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog4.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="https://blogs.library.duke.edu/bitstreams/2021/04/23/library-study-space-design-intentional-inclusive-flexible/" class="title">Unique sitting arrangement</a>
+                <span>Comfortable in terms of sitting</span>
+                <p>Upright Sit-Traditional Library Chairs, Recline-Sit Lounge Library Chairs..</p>
+                <a href="https://blogs.library.duke.edu/bitstreams/2021/04/23/library-study-space-design-intentional-inclusive-flexible/" class="btn">Sitting Arrangements</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="https://bookpallibrary.com/Blog/single-post.php?bid=108" class="title">Separate aligned bookshelf</a>
+                <span>All kinds of books available</span>
+                <p>According to students different books are designed and arranged</p>
+                <a href="https://bookpallibrary.com/Blog/single-post.php?bid=108" class="btn">Bookshelf Arrangements</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="https://medium.com/everylibrary/turn-your-hobby-into-a-profession-2b3aead989a1" class="title">lobbies for professional</a>
+                <span>Autonomous lobbies are originated </span>
+                <p>Those lobbies are fully sound proof, basically for professionals</p>
+                <a href="https://medium.com/everylibrary/turn-your-hobby-into-a-profession-2b3aead989a1" class="btn">Loobies Arrangements</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> us </h1>
+
+        <div class="row">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14682.798431877454!2d72.660678!3d23.071472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2395a616d254770!2sShreenath%20Heights!5e0!3m2!1sen!2sin!4v1651314494465!5m2!1sen!2sin"
+            
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="contact.php" method="post">
+                <h3>Get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="enter your name" name="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" name="email" placeholder="email id">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-folder"></span>
+                    <input type="text" name="query" placeholder="write your query here">
+                </div>
+                <input type="submit" name="contact" value="contact now" class="btn">
+            </form>
+            
+
+        </div>
+
+    </section> 
+    <!-- https://www.google.com/maps/place/AMBEDKAR+DSEU+Shakarpur+Campus+1/@28.6296681,77.2850539,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce3554bfe13ff:0x42eb4f05b4caa699!8m2!3d28.6296681!4d77.2850539!16s%2Fg%2F1q5cchk6j -->
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="credit"><a href="#">Privacy Policy</a> &nbsp; | &nbsp; <a href="#">Terms of Use</a> &nbsp; | &nbsp; <a href="#">Act of Education for all</a> &nbsp; | &nbsp; <a href="#">Cookie Preferences</a></div>
+        <div class="credit">created by <span> Library Wings</span> | all rights reserved</div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

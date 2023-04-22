@@ -82,7 +82,7 @@
 							}
 							else{
 								?>
-								<br><br><center><span class="alert-danger">Wrong Password !!</span></center>
+								<br><br><center><?php echo "Wrong password!" ?></center>
 								<?php
 							}
 						}
