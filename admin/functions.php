@@ -47,6 +47,18 @@
 		return($issue_book_count);
 	}
 
+	function get_not_return_book_count(){
+		$connection = mysqli_connect("localhost","root","");
+		$db = mysqli_select_db($connection,"lms");
+		$not_return_book_count = 0;
+		$query = "select count(*) as not_return_book_count from issued_books where status=0";
+		$query_run = mysqli_query($connection,$query);
+		while ($row = mysqli_fetch_assoc($query_run)){
+			$not_return_book_count = $row['not_return_book_count'];
+		}
+		return($not_return_book_count);
+	}
+
 	function get_category_count(){
 		$connection = mysqli_connect("localhost","root","");
 		$db = mysqli_select_db($connection,"lms");

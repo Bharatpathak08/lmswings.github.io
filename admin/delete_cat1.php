@@ -1,10 +1,10 @@
 <?php
 	$connection = mysqli_connect("localhost","root","");
 	$db = mysqli_select_db($connection,"lms");
-	$query = "update admins set name = '$_POST[name]',email = '$_POST[email]',mobile = '$_POST[mobile]'";
+	$query = "delete from category where cat_id = $_GET[cid]";
 	$query_run = mysqli_query($connection,$query);
 ?>
 <script type="text/javascript">
-	alert("Updated successfully...");
-	window.location.href = "admin_dashboard1.php";
+	alert("Category Deleted successfully...");
+	window.location.href = "manage_cat1.php";
 </script>

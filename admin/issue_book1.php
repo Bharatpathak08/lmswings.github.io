@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Issue Book</title>
     <link rel="stylesheet" href="css/user-dashboard.css">
     
 	<link rel="stylesheet" type="text/css" href="../bootstrap-4.4.1/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
 			<ul class="nav navbar-nav navbar-right" style="display:flex; flex-direction:row;">
 
 			<li class="nav-item" style="margin-top:8px;margin-right:10px;">
-		        <a class="nav-link" href="issue_book1.php">Issue a Book</a>
+		        <a class="nav-link active1" href="issue_book1.php">Issue a Book</a>
 		      </li>
 			  
 			  
@@ -84,7 +84,7 @@
 			  
 			  
 		      <li class="nav-item" style="margin-top:8px;">
-		        <a class="nav-link active1" href="../logout.php">Logout</a>
+		        <a class="nav-link" href="../logout.php">Logout</a>
 		      </li>
 		    </ul>
 	  
@@ -92,7 +92,7 @@
 
     <div class="sidebar" >
       <ul>
-        <li> <a class="sidebar-list-item active" href="admin_dashboard1.php"> <i class="fas fa-home icon"></i><em>Dashboard</em></a></li>
+        <li> <a class="sidebar-list-item " href="admin_dashboard1.php"> <i class="fas fa-home icon"></i><em>Dashboard</em></a></li>
         
         <li style="margin-top:-5px;"> <a class="sidebar-list-item" href="add_book1.php"> <i class="fas fa-toolbox icon"></i><em>Add New Book</em></a>
         </li>
@@ -112,78 +112,68 @@
         <li style="margin-top:-5px;"> <a class="sidebar-list-item" href="edit_profile1.php"> <i class="fas fa-tasks icon"></i><em>Edit Profile</em></a></li>
         <li style="margin-top:-5px;"> <a class="sidebar-list-item" href="change_password1.php"> <i class="fas fa-calendar icon"></i><em>Change Password</em></a>
         </li>
-        <li style="margin-top:-5px;"> <a class="sidebar-list-item" href="issue_book1.php"> <i class="fas fa-toolbox icon"></i><em>Issue a Book</em></a>
+        <li style="margin-top:-5px;"> <a class="sidebar-list-item active" href="issue_book1.php"> <i class="fas fa-toolbox icon"></i><em>Issue a Book</em></a>
         </li>
         
       </ul>
     </div>
 
-    <div class="row" style="margin-left: 305px; min-height:695px;">
-		<div class="col-md" style="margin-top: 160px; ">
-        <div class="card  bg-dark text-light" style="width: 250px">
-				<div class="card-header">Registered User</div>
-				<div class="card-body">
-					<p class="card-text">No. total Users: <?php echo get_user_count();?></p>
-					<a class="btn btn-danger" href="Regusers1.php"  >View Registered Users</a>
-				</div>
-			</div>
-            
-		</div>
-        <div class="col-md" style="margin-top: 160px">
-			<div class="card  bg-dark text-light" style="width: 250px">
-				<div class="card-header">Total Book</div>
-				<div class="card-body">
-					<p class="card-text">No of books available: <?php echo get_book_count();?></p>
-					<a class="btn btn-secondary" href="Regbooks1.php"  >View All Books</a>
-				</div>
-			</div>
-		</div>
-        <div class="col-md" style="margin-top: -20px">
-			<div class="card  bg-dark text-light" style="width: 250px">
-				<div class="card-header">Book Categories</div>
-				<div class="card-body">
-					<p class="card-text">No of Book's Categories: <?php echo get_category_count();?></p>
-					<a class="btn btn-info" href="Regcat1.php"  >View Categories</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md" style="margin-top: -24px">
-            <div class="card  bg-dark text-light" style="width: 250px">
-				<div class="card-header">Book Not Returned</div>
-				<div class="card-body">
-					<p class="card-text">No of book not returned: <?php echo get_not_return_book_count();?></p>
-					<a class="btn btn-warning" href="view_not_return_book1.php"  >View Not Returned Books</a>
-				</div>
-			</div>
-		</div>
-        
-		
-	</div>
+    <main class="content">
+      <div class="main-header">
+        <div class="main-title">
+          <h1>Issue Book</h1>
+        </div>
+        <div class="main-form">
+          <form name="event" action="" method="post">
+            <input type="text" name="book_name" id="ftitle" placeholder="Book Name" required>
 
-   <div class="col">
-        <div class="col-md" style="margin-top: 45px">
-            <div class="card  bg-dark text-light" style="width: 250px">
-				<div class="card-header">Book Issued</div>
-				<div class="card-body">
-					<p class="card-text">No of book issued: <?php echo get_issue_book_count();?></p>
-					<a class="btn btn-primary" href="view_issued_book1.php"  >View Issued Books</a>
-				</div>
-			</div>
-		</div>
-		
-        <div class="col-md" style="margin-top: 90px">
-            <div class="card  bg-dark text-light" style="width: 250px">
-				<div class="card-header">No. of Authors</div>
-				<div class="card-body">
-					<p class="card-text">No of Authors: <?php echo get_author_count();?></p>
-					<a class="btn btn-success" href="Regauthor1.php"  >View Authors</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md"></div>
-		<div class="col-md"></div>
-	</div>
+            <select name="book_author" id="ftitle" placeholder="Author  ID" required>
+            <option>-Select author-</option>
+							<?php  
+								$connection = mysqli_connect("localhost","root","");
+								$db = mysqli_select_db($connection,"lms");
+								$query = "select author_name from authors";
+								$query_run = mysqli_query($connection,$query);
+								while($row = mysqli_fetch_assoc($query_run)){
+									?>
+									<option><?php echo $row['author_name'];?></option>
+									<?php
+								}
+							?>
+						</select>
 
-  </div>
+
+            <input type="text" name="book_no" id="fdescription" placeholder="Book Number" required >
+
+            <input type="text" name="student_id" id="flocation" placeholder="Student ID" required >
+
+            <input type="text" name="issue_date" id="flocation" value="<?php echo date("yy-m-d");?>" Issue Date="Book Name" required >
+
+            <input type="submit" name="issue_book" id="fsubmit" value="Issue Book" class="button">
+
+          </form>
+        </div>
+      </div>
+    </main>
+
 </body>
 </html>
+
+
+<?php
+	if(isset($_POST['issue_book']))
+	{
+		$connection = mysqli_connect("localhost","root","");
+		$db = mysqli_select_db($connection,"lms");
+		$query = "insert into issued_books values(null,$_POST[book_no],'$_POST[book_name]','$_POST[book_author]',$_POST[student_id],1,'$_POST[issue_date]')";
+		$query_run = mysqli_query($connection,$query);
+?>
+        <script type="text/javascript">
+	alert("Issued successfully...");
+	window.location.href = "admin_dashboard1.php";
+</script>
+        <?php
+        
+
+    }
+?>

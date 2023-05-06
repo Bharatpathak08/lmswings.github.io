@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animated Login Form</title>
+	<title>Admin Login</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="../bootstrap-4.4.1/css/bootstrap.min.css">
   	<script type="text/javascript" src="../bootstrap-4.4.1/js/juqery_latest.js"></script>
   	<script type="text/javascript" src="../bootstrap-4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script scr="js/login.js"></script>
 	<link rel="stylesheet" href="css/navbar.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
@@ -24,7 +24,7 @@
 <body>
 	<!-- header section starts  -->
     <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="index.php">Library Wings</a>
+        <a class="navbar-brand navbar-logo" href="../index.php">Library Wings</a>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -45,16 +45,16 @@
         </div>
     </nav>
     <!-- header section ends -->
-	<img class="wave" src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png">
+	<img class="wave" src="../images/wave.png">
 	
 	<div class="container">
 		<div class="img">
-			<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg">
+			<img src="../images/bg.svg">
 		</div>
 		<div class="login-content">
 			<form method="post">
-				<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg">
-				<h2 class="title">Welcome</h2>
+				<img src="../images/avatar.svg">
+				<!-- <h2 class="title">Welcome</h2> -->
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
@@ -73,7 +73,7 @@
            		    	<input type="password" name="password" class="input" required>
             	   </div>
             	</div>
-            	<a href="signup.php">Not registered yet ?</a>
+            	<a href="../login1.php">Are you a user ?</a>
             	<input type="submit" class="btn" name="login" value="Login">
             </form>
 
