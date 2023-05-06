@@ -6,5 +6,5 @@
 ?>
 <script type="text/javascript">
 	alert("Registration successfull...You may Login now !!");
-	window.location.href = "index.php";
+	window.location.href = "login1.php";
 </script>

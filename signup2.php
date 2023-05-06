@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Animated Login Form</title>
+	<title>Sign Up</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -11,10 +11,15 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.4.1/css/bootstrap.min.css">
   	<script type="text/javascript" src="bootstrap-4.4.1/js/juqery_latest.js"></script>
   	<script type="text/javascript" src="bootstrap-4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
     <script scr="js/login.js"></script>
 	<link rel="stylesheet" href="css/navbar.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
+
+	    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.io/favicon-16x16.png">
+<link rel="manifest" href="favicon.io/site.webmanifest"> -->
 
 	<script src="js/navbar.js"></script>
 
@@ -43,15 +48,15 @@
         </div>
     </nav>
     <!-- header section ends -->
-	<img class="wave" src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/wave.png">
+	<img class="wave" src=" images/wave.png">
 	
 	<div class="container">
 		<div class="img">
-			<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/bg.svg">
+		<img src=" images/bg.svg">
 		</div>
 		<div class="login-content">
 			<form action=" register.php" method="post">
-				<img src="https://raw.githubusercontent.com/sefyudem/Responsive-Login-Form/master/img/avatar.svg" style="margin-bottom:4px;">
+			<img src=" images/avatar.svg">
 				<!-- <h2 class="title">Welcome</h2> -->
                 <div class="input-div one" style="margin-bottom:2px;">
            		   <div class="i">
@@ -99,7 +104,7 @@
            		   </div>
            		</div>
                 
-            	<a href="signup.php">Not registered yet ?</a>
+            	<a href="login1.php">Already Registered ?</a>
             	<input type="submit" class="btn" name="register" value="Register">
             </form>
 

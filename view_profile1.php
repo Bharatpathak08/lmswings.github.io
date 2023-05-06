@@ -1,15 +1,18 @@
 <?php
 	session_start();
-	function get_user_issue_book_count(){
-		$connection = mysqli_connect("localhost","root","");
-		$db = mysqli_select_db($connection,"lms");
-		$user_issue_book_count = 0;
-		$query = "select count(*) as user_issue_book_count from issued_books where student_id = $_SESSION[id]";
-		$query_run = mysqli_query($connection,$query);
-		while ($row = mysqli_fetch_assoc($query_run)){
-			$user_issue_book_count = $row['user_issue_book_count'];
-		}
-		return($user_issue_book_count);
+	#fetch data from database
+	$connection = mysqli_connect("localhost","root","");
+	$db = mysqli_select_db($connection,"lms");
+	$name = "";
+	$email = "";
+	$mobile = "";
+	$query = "select * from users where email = '$_SESSION[email]'";
+	$query_run = mysqli_query($connection,$query);
+	while ($row = mysqli_fetch_assoc($query_run)){
+		$name = $row['name'];
+		$email = $row['email'];
+		$mobile = $row['mobile'];
+		$address = $row['address'];
 	}
 ?>
 
@@ -19,7 +22,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
+    <title>View Profile</title>
     <link rel="stylesheet" href="css/user_dashboard.css">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
     
@@ -30,7 +33,7 @@
 </head>
 <body>
 	
-  <div class="layout" >
+  <div class="layout">
 	
 
     <nav class="header" >
@@ -64,9 +67,9 @@
 
 	<div class="sidebar">
       <ul>
-        <li> <a class="sidebar-list-item active" href="user_dashboard1.php"> <i class="fas fa-home icon"></i><em>Dashboard</em></a></li>
+        <li> <a class="sidebar-list-item" href="user_dashboard1.php"> <i class="fas fa-home icon"></i><em>Dashboard</em></a></li>
         <li> <a class="sidebar-list-item" href="view_issued_book.php"><i class="fas fa-tasks icon"></i> <em>View Issued Books</em></a></li>
-        <li> <a class="sidebar-list-item" href="view_profile1.php"> <i class="fas fa-user icon"></i><em>View Profile</em></a></li>
+        <li> <a class="sidebar-list-item active" href="view_profile1.php"> <i class="fas fa-user icon"></i><em>View Profile</em></a></li>
         <li> <a class="sidebar-list-item " href="edit_profile1.php"> <i class="fas fa-toolbox icon"></i></i><em>Edit Profile</em></a>
         </li>
         <li> <a class="sidebar-list-item" href="change_password1.php"><i class="fas fa-lightbulb icon"></i> <em>Change Password</em></a>
@@ -75,20 +78,23 @@
       </ul>
     </div>
 
-    <main class="content">
-	<div class="row">
-		<div class="col-md-3" style="margin: 25px;  padding-top: 150px;">
-			<div class="card bg-dark text-light" style="width: 300px">
-				<div class="card-header">Book's Issued</div>
-				<div class="card-body ">
-					<p class="card-text">No of book issued: <?php echo get_user_issue_book_count();?></p>
-					<a class="btn btn-success" href="view_issued_book.php">View Issued Books</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3"></div>
-		<div class="col-md-3"></div>
+	<main class="content">
+      <div class="main-header">
+        <div class="main-title">
+          <h1>Your Profile</h1>
+        </div>
+        <div class="main-form">
+          <form name="event">
+            <input type="text" id="ftitle" value="<?php echo $name;?>" disabled>
+            <input type="text" id="fdescription" value="<?php echo $email;?>" disabled>
+            <input type="text" id="flocation" value="<?php echo $mobile;?>" disabled>
+            <input type="text" id="flocation" value="<?php echo $address;?>" disabled>
+
+          </form>
+        </div>
+      </div>
     </main>
+
 
    
   </div>

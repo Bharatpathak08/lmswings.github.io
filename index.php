@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.io/favicon-16x16.png">
+<link rel="manifest" href="favicon.io/site.webmanifest"> -->
 </head>
 <body>
     <!-- header section starts  -->
-    <header class="header">
+    <header class="header" style="padding:0px 7%;">
         <a href="#" class="logo">
             <img src="images/lib_logo.png" alt="logo"></a>
         <nav class="navbar">
@@ -31,7 +35,6 @@
         
     </header>
     <!-- header section ends -->
-
     <!-- home section starts  -->
 
     <section class="home" id="home">
@@ -67,6 +70,7 @@
         </div>
 
     </section>
+<br><br><br><br><br>
 
 <!-- review section starts  -->
  
@@ -121,6 +125,8 @@
         </div>
 
     </section> 
+    <br><br><br><br><br>
+    <br><br>
 
     <!-- review section ends -->
 
@@ -171,6 +177,7 @@
     </div>
 
 </section>
+<br><br><br>
 
 <!-- blogs section ends -->
 
@@ -192,15 +199,15 @@
                 <h3>Get in touch</h3>
                 <div class="inputBox">
                     <span class="fas fa-user"></span>
-                    <input type="text" placeholder="enter your name" name="name">
+                    <input type="text" placeholder="enter your name" name="name" required>
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-envelope"></span>
-                    <input type="email" name="email" placeholder="email id">
+                    <input type="email" name="email" placeholder="email id" required>
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-folder"></span>
-                    <input type="text" name="query" placeholder="write your query here">
+                    <input type="text" name="query" placeholder="write your query here" required>
                 </div>
                 <input type="submit" name="contact" value="contact now" class="btn">
             </form>
@@ -211,6 +218,7 @@
     </section> 
     <!-- https://www.google.com/maps/place/AMBEDKAR+DSEU+Shakarpur+Campus+1/@28.6296681,77.2850539,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce3554bfe13ff:0x42eb4f05b4caa699!8m2!3d28.6296681!4d77.2850539!16s%2Fg%2F1q5cchk6j -->
     <!-- contact section ends -->
+    <br><br><br>
 
     <!-- footer section starts  -->
 

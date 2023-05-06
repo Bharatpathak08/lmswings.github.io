@@ -6,5 +6,5 @@
 ?>
 <script type="text/javascript">
 	alert("Updated successfully...");
-	window.location.href = "user_dashboard.php";
+	window.location.href = "user_dashboard1.php";
 </script>

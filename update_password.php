@@ -8,13 +8,13 @@
 	while ($row = mysqli_fetch_assoc($query_run)){
 		$password = $row['password'];
 	}
-	if($password == $_POST['new_password']){
+	if($password == $_POST['old_password']){
 		$query = "update users set password = '$_POST[new_password]' where email = '$_SESSION[email]'";
 		$query_run = mysqli_query($connection,$query);
 		?>
 		<script type="text/javascript">
 			alert("Updated successfully...");
-			window.location.href = "user_dashboard.php";
+			window.location.href = "user_dashboard1.php";
 		</script>
 		<?php
 	}
@@ -22,7 +22,7 @@
 		?>
 		<script type="text/javascript">
 			alert("Wrong User Password...");
-			window.location.href = "change_password.php";
+			window.location.href = "change_password1.php";
 		</script>
 		<?php
 	}
