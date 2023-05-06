@@ -91,12 +91,13 @@ form{
 .input-div > div > h5{
 	position: absolute;
 	left: 10px;
-	top: 50%;
+	top: -3%;
 	transform: translateY(-50%);
 	color: #fceeee;
 	font-size: 18px;
 	transition: .3s;
 }
+
 
 .input-div:before, .input-div:after{
 	content: '';
